@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+}
+.container-for-face-content{
+    padding: 80px 20px 30px 20px;
+}
+.container-for-face-content h2{
+    color: white;
+    font-weight: 500;
+}
+.container-for-all-product-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.single-product-card{
+    background-color: rgba(255, 255, 255, 0.944);
+    color: black;
+    padding: 15px 15px;
+    border-radius:20px ;
+    height: fit-content;
+}
+.single-product-card > img{
+    width:100%;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.368);
+}
+.single-product-card p{
+    font-size: 1em;
+    font-weight: 300;
+}
+.single-product-card button{
+    width:100%;
+    padding: 13px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.single-product-card button img{
+    width: 20px;
+   filter: var(--iconfilter);
+}
+.short-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0;
+    margin: 10px 0;
+}
+.short-info > div > span{
+    display: block;
+    text-align: center;
+}
+.short-info .value{
+    font-weight: 600;
+}
+.short-info img{
+    width: 20px;
+}
+
+/* Tablet Responsiveness */
+@media only screen and (max-width:980px){
+.container-for-face-content{
+    padding: 10px 20px 30px 20px;
+}
+.container-for-all-product-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 30px;
+}
+.single-product-card{
+    background-color: rgba(255, 255, 255, 0.944);
+    color: black;
+    padding: 15px 15px;
+    border-radius:20px ;
+    height: fit-content;
+}
+.single-product-card > img{
+    height: 40vh;
+}
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width:767px){
+ .container-for-all-product-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 30px;
+}
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/general.css">
+    <link rel="stylesheet" href="stylesheet/contact.css">
+</head>
+<body>
+     <header>
+           <div class="brand-name">Glowmuse</div>
+           <nav class="menu" id="menu">
+              <ul>
+                <li onclick="closeMenu()" class="hide-on-laptop">X</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="eye.html">Eyes</a></li>
+                <li><a href="face.html">Face</a></li>
+                <li><a href="lip.html">Lips</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+              </ul>
+           </nav>
+           <div class="icons">
+            <img src="" alt="">
+            <img src="" alt="">
+            <button>Buy Now</button>
+           </div>
+           <div onclick="showMenu()" class="menu-icon hide-on-laptop">
+                &equiv;
+           </div>
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h1>Get in Touch</h1>
+                <p>We'd love to hear from you! Send us a message and we'll respond as soon as possible.</p>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Our Location</h3>
+                        <p>123 Beauty Street, Glow City</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p>info@glowmuse.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="subject" required>
+                    <label for="subject">Subject</label>
+                </div>
+                
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+ <script src="javascript/general.js"></script>
+</body>
+</html>

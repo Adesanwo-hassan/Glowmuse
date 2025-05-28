@@ -1,0 +1,125 @@
+.main-sect{
+    background-image: linear-gradient(to left,rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.941) 100%),url(../images/herobg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgb(0, 0, 0);
+    background-size: 50vw 100%;
+    height:100vh;
+    width:100vw;
+    color: white;
+    margin: 0;
+    padding: 40px 20px 20px 20px;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.main-sect div{
+    background: transparent;
+    
+}
+.main-sect div:first-child h1{
+    font-size: 3em;
+    font-weight: 500;
+    width: 40%;
+}
+.main-sect > div:first-child p{
+    width:40%;
+}
+.cta-button{
+    display: flex;
+    column-gap: 40px;
+
+}
+.cta-button button:first-child{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.cta-button button:nth-child(2){
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+}
+.short-desc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+.short-desc div{
+    text-align: center;
+}
+.short-desc div p{
+    text-align: center;
+     width: 100%;
+}
+.short-desc div img{
+    width:20px;
+    filter: var(--iconfilter);
+}
+.social-media{
+    display: flex;
+    align-content: center;
+    gap: 40px;
+}
+.social-media img{
+    width: 20px;
+    filter: var(--iconfilter);
+}
+
+@media only screen and (max-width:980px) {
+    .main-sect{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.704)),url(../images/herobg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgb(0, 0, 0);
+    background-size: 100% 100%;
+    height:100%;
+    width:100vw;
+    color: white;
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+    display: grid;
+    align-content: center;
+    gap: 100px;
+
+}
+.main-sect div:first-child h1,.main-sect > div:first-child p,.short-desc{
+    width: 96%;
+    text-align: center;
+}
+.main-sect div:first-child h1{
+    text-align: center;
+    font-size: 60px;
+}
+.social-media,.cta-button{
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media only screen and (max-width:767px){
+    .main-sect{
+        padding: 50px 0;
+    }
+    .main-sect div:first-child h1{
+        font-size: 30px;
+    }
+    div:first-child p{
+        font-size: 1em;
+    }
+    .cta-button{
+          display: flex;
+          gap: 7px;
+    }
+    .short-desc{
+        grid-template-columns: 1fr 1fr;
+    }
+    .short-desc > div:last-child{
+        grid-column: 1/3;
+    }
+}
